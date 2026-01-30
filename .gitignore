@@ -1,0 +1,88 @@
+# Dependencies
+venv_312/
+env/
+venv/
+.env/
+*.pyc
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.venv/
+
+# Large files
+Qwen3-TTS/
+models/
+checkpoints/
+weights/
+*.pt
+*.pth
+*.bin
+*.onnx
+*.safetensors
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+
+# IDE and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs and reports
+logs/
+*.log
+coverage.xml
+.coverage
+reports/
+
+# Testing
+*.test.log
+
+# Documentation
+docs/build/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# OS generated files
+Thumbs.db
+.DS_Store
+
+# Local configuration files
+config/local/
+config/development/
+
+# Security
+*.pem
+*.key
+*.crt
+*.p12
+
+# CI/CD
+.github/workflows/*.yml.bak
+
+# Pre-commit
+.pre-commit-config.yaml.bak
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

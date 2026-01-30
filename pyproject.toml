@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voice-changing-app"
+version = "0.1.0"
+description = "语音变声应用"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+
+[project.urls]
+Homepage = "https://github.com/ychniming/Voice-changing-app"
+Repository = "https://github.com/ychniming/Voice-changing-app"
+
+[tool.setuptools]
+packages = ["core", "platforms"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["tests/conftest.py"]
+python_functions = ["tests/conftest.py"]
+addopts = "-ra -q --strict-markers --disable-warnings"
+markers = [
+    "unit: Unit tests",
+    "integration: Integration tests"
+]
+
+[tool.coverage.run]
+source = ["core"]
+omit = [
+    "tests/*",
+    "*/__pycache__/*"
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError"
+]
